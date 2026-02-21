@@ -3,8 +3,26 @@ name = "tradeaxis"
 version = "0.1.0"
 description = "Matplotlib with market-microstructure sanity: gap compression, LOD decimation, and trader-style interaction."
 authors = ["Samay Panwar <samaybhuvi@gmail.com>"]
+license = "MIT"
 packages = [{ include = "tradeaxis", from = "src" }]
 readme = "README.md"
+keywords = ["matplotlib", "trading", "finance", "charting", "decimation"]
+classifiers = [
+    "Development Status :: 3 - Alpha",
+    "Intended Audience :: Developers",
+    "Intended Audience :: Financial and Insurance Industry",
+    "License :: OSI Approved :: MIT License",
+    "Programming Language :: Python :: 3",
+    "Programming Language :: Python :: 3.11",
+    "Programming Language :: Python :: 3.12",
+    "Programming Language :: Python :: 3.13",
+    "Topic :: Scientific/Engineering :: Visualization",
+]
+
+[tool.poetry.urls]
+Homepage = "https://github.com/samaypanwar/tradeaxis"
+Repository = "https://github.com/samaypanwar/tradeaxis"
+Issues = "https://github.com/samaypanwar/tradeaxis/issues"
 
 [tool.poetry.dependencies]
 python = "^3.11"
@@ -16,6 +34,10 @@ pytest = "^8.0"
 jupyter = "^1.0"
 ipykernel = "^7.2.0"
 pyqt6 = "^6.10.2"
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
 
 [tool.pytest.ini_options]
 testpaths = ["tests"]
